@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/styles.css" />
-  <link rel="stylesheet" href="assets/neon-theme.css" />
+  <link rel="stylesheet" href="assets/neon-theme.css?v=4" />
   <title>Open End Technology | حلول برمجية متكاملة للأعمال</title>
   <script type="application/ld+json">{
     "@context": "https://schema.org", "@type": "ProfessionalService",
@@ -24,6 +24,23 @@
     "telephone": "+9647701613232", "areaServed": {"@type":"Country","name":"Iraq"},
     "availableLanguage": ["Arabic", "English"], "sameAs": ["https://www.instagram.com/open.end_tech/"]
   }</script>
+
+  <style id="project-link-fix-v4">
+    /* OPEN END: explicit, accessible, reliably clickable project links */
+    #projects .project-jitak .project-details,
+    #projects .project-event .project-card-bottom,
+    #projects .project-games .project-card-bottom {position:relative;z-index:10}
+    #projects .project a.project-action,
+    #projects .project a.project-visit-link,
+    #projects .project a.store-link {position:relative;z-index:20;pointer-events:auto!important;touch-action:manipulation}
+    #projects .project-store-links {display:flex!important;gap:9px;flex-wrap:wrap;position:relative;z-index:22;margin-top:17px}
+    #projects .store-link {display:inline-flex!important;align-items:center;justify-content:center;min-height:41px;font-size:12px;font-weight:800;padding:10px 12px;background:#0b1222;border:1px solid #c4ffc0;color:#fff;box-shadow:0 3px 12px #0005}
+    #projects .project-visit-link {display:inline-flex!important;align-items:center;min-height:42px;padding:9px 15px;letter-spacing:0;color:#f4fff5!important;border:1px solid #79f66f;background:#166d3973}
+    #projects .project .project-action {min-width:48px;min-height:48px}
+    #projects .project-jitak,#projects .project-event,#projects .project-games {cursor:pointer}
+    #projects .project-jitak:focus-visible,#projects .project-event:focus-visible,#projects .project-games:focus-visible{outline:3px solid #88ff78;outline-offset:4px}
+    @media(max-width:430px){#projects .store-link{font-size:10px;min-height:37px;padding:8px 9px}#projects .project-store-links{gap:7px}}
+  </style>
 </head>
 <body>
   <svg aria-hidden="true" class="svg-sprite" xmlns="http://www.w3.org/2000/svg">
@@ -113,7 +130,7 @@
       <div class="container">
         <div class="section-heading reveal"><div><span class="section-index">02 / <span data-i18n="projectsEyebrow">أعمال نفخر بها</span></span><h2 data-i18n="projectsTitle">مو مجرد أفكار.<br/><span>مشاريع على أرض الواقع.</span></h2></div><p data-i18n="projectsIntro">نماذج من منتجاتنا وتجاربنا البرمجية؛ كل مشروع مبني لحل حاجة حقيقية.</p></div>
         <div class="project-grid">
-          <article class="project project-jitak reveal"><div class="project-top"><div class="project-tag"><span class="tag-pulse"></span> FLAGSHIP PRODUCT</div><span class="project-number">01 / 04</span></div><div class="project-jitak-content"><div class="project-details"><span class="project-type" data-i18n="jitakType">تطبيق متعدد الخدمات • iOS & Android</span><h3>جيتك <span>JITAK</span></h3><p data-i18n="jitakDesc">تطبيق يجمع المطاعم، المتاجر والخدمات مع الطلب والتوصيل في تجربة واحدة سهلة للمستخدم وأصحاب الأعمال.</p><div class="pill-row"><span>iOS</span><span>Android</span><span>Delivery</span></div><div class="project-store-links" aria-label="روابط تحميل تطبيق جيتك"><a class="store-link" href="https://play.google.com/store/apps/details?id=com.jitak.app" target="_blank" rel="noopener noreferrer" aria-label="Download JITAK on Google Play"><span class="store-mark" aria-hidden="true">▶</span><span dir="ltr">Google Play</span></a><a class="store-link" href="https://apps.apple.com/iq/app/%D8%AC%D9%8A%D8%AA%D9%83-jitak/id6812668250" target="_blank" rel="noopener noreferrer" aria-label="Download JITAK on the App Store"><span class="store-mark" aria-hidden="true">●</span><span dir="ltr">App Store</span></a></div><a href="https://jitakapp.com/" class="project-action" target="_blank" rel="noopener" data-i18n-aria="openJitak" aria-label="Visit JITAK website"><svg class="ico"><use href="#i-arrow-up"></use></svg></a></div><div class="jitak-phone"><div class="jitak-phone-top"><span>9:41</span><span>●●●</span></div><div class="jitak-app-header"><small>مرحباً بك في</small><strong>جيتك <b>✳</b></strong></div><div class="jitak-search">⌕ &nbsp; شنو تحتاج اليوم؟</div><div class="jitak-card"><div><small>كل اللي تريده</small><strong>من مكانك</strong><b>اطلب هسه ↖</b></div><span>🛵</span></div><div class="jitak-cats"><div><b>🍔</b><span>مطاعم</span></div><div><b>🛒</b><span>ماركت</span></div><div><b>☕</b><span>مقاهي</span></div></div><div class="jitak-bottom"><span>⌂</span><span>▦</span><span>♡</span><span>☻</span></div></div></div></article>
+          <article class="project project-jitak reveal"><div class="project-top"><div class="project-tag"><span class="tag-pulse"></span> FLAGSHIP PRODUCT</div><span class="project-number">01 / 04</span></div><div class="project-jitak-content"><div class="project-details"><span class="project-type" data-i18n="jitakType">تطبيق متعدد الخدمات • iOS & Android</span><h3>جيتك <span>JITAK</span></h3><p data-i18n="jitakDesc">تطبيق يجمع المطاعم، المتاجر والخدمات مع الطلب والتوصيل في تجربة واحدة سهلة للمستخدم وأصحاب الأعمال.</p><div class="pill-row"><span>iOS</span><span>Android</span><span>Delivery</span></div><div class="project-store-links" aria-label="روابط تحميل تطبيق جيتك"><a class="store-link" href="https://play.google.com/store/apps/details?id=com.jitak.app" target="_blank" rel="noopener noreferrer" aria-label="Download JITAK on Google Play"><span class="store-mark" aria-hidden="true">▶</span><span dir="ltr">Google Play</span></a><a class="store-link" href="https://apps.apple.com/iq/app/%D8%AC%D9%8A%D8%AA%D9%83-jitak/id6812668250" target="_blank" rel="noopener noreferrer" aria-label="Download JITAK on the App Store"><span class="store-mark" aria-hidden="true">●</span><span dir="ltr">App Store</span></a></div><a href="https://play.google.com/store/apps/details?id=com.jitak.app" class="project-action" target="_blank" rel="noopener noreferrer" aria-label="تحميل جيتك من Google Play / Download JITAK on Google Play"><svg class="ico"><use href="#i-arrow-up"></use></svg></a></div><div class="jitak-phone"><div class="jitak-phone-top"><span>9:41</span><span>●●●</span></div><div class="jitak-app-header"><small>مرحباً بك في</small><strong>جيتك <b>✳</b></strong></div><div class="jitak-search">⌕ &nbsp; شنو تحتاج اليوم؟</div><div class="jitak-card"><div><small>كل اللي تريده</small><strong>من مكانك</strong><b>اطلب هسه ↖</b></div><span>🛵</span></div><div class="jitak-cats"><div><b>🍔</b><span>مطاعم</span></div><div><b>🛒</b><span>ماركت</span></div><div><b>☕</b><span>مقاهي</span></div></div><div class="jitak-bottom"><span>⌂</span><span>▦</span><span>♡</span><span>☻</span></div></div></div></article>
           <article class="project project-pos reveal"><div class="project-top"><div class="project-tag">BUSINESS SYSTEM</div><span class="project-number">02 / 04</span></div><div class="pos-art"><div class="pos-screen"><div class="pos-header"><span><b>◉</b> OPEN END POS</span><span>● ACTIVE</span></div><div class="pos-body"><div class="pos-square pos-q1">☕<small>مشروبات</small></div><div class="pos-square pos-q2">🍰<small>حلويات</small></div><div class="pos-square pos-q3">🥤<small>عصائر</small></div><div class="pos-square pos-q4">🍽️<small>طلبات</small></div></div><div class="pos-bottom"><span>الطاولة 04</span><strong>15,000 IQD</strong></div></div><div class="pos-receipt"><span>ORDER #024</span><div class="receipt-bars"></div><span>✓ PAID</span></div></div><div class="project-card-bottom"><div><span class="project-type" data-i18n="posType">نظام مطاعم وكافيهات</span><h3>Open End POS</h3><p data-i18n="posDesc">إدارة الطاولات والطلبات والكاشير والطباعة، مع خيارات الطلب بباركود الطاولة أو من دون باركود.</p></div><a href="#solutions" class="project-action" aria-label="Discover POS solution"><svg class="ico"><use href="#i-arrow-up"></use></svg></a></div></article>
           <article class="project project-event reveal"><div class="project-top"><div class="project-tag">EVENT TECHNOLOGY</div><span class="project-number">03 / 04</span></div><div class="event-art"><div class="event-light"></div><div class="event-card"><div class="event-card-top"><span>EVENT PASS</span><span>✳</span></div><strong>بهرا<br/>دبغديدا</strong><span class="event-card-syriac">ܒܗܪܐ ܕܒܓܕܝܕܐ</span><div class="event-card-code"><span>|||| ||| |||| || |||| ||</span><small>ACCESS CARD</small></div></div><div class="event-scanner"><svg class="ico"><use href="#i-qr"></use></svg><span>VALID ENTRY ✓</span></div></div><div class="project-card-bottom"><div><span class="project-type" data-i18n="eventType">تسجيل إلكتروني وإدارة دخول</span><h3 data-i18n="eventName">كرنفال بهرا دبغديدا</h3><p data-i18n="eventDesc">تسجيل عبر الإنترنت، بطاقات دخول بباركود، وفحص التذاكر عند البوابات مع لوحة تحكم للمنظمين.</p><a href="https://events.jitakapp.com/" class="project-visit-link" target="_blank" rel="noopener noreferrer"><span data-i18n="eventVisit">زيارة منصة التسجيل</span><svg class="ico" aria-hidden="true"><use href="#i-arrow-up"></use></svg></a></div><a href="https://events.jitakapp.com/" class="project-action" target="_blank" rel="noopener noreferrer" aria-label="Open event registration site"><svg class="ico"><use href="#i-arrow-up"></use></svg></a></div></article>
           <article class="project project-games reveal"><div class="project-top"><div class="project-tag">INTERACTIVE EXPERIENCES</div><span class="project-number">04 / 04</span></div><div class="games-art"><div class="game-grid-lines"></div><div class="game-control"><div class="game-stars">✦ ✳ ✦</div><span>LEVEL UP</span><strong>PLAY<br/>& WIN<span>!</span></strong><div class="game-pad"><i>✚</i><i>● ●</i></div></div><div class="game-bubble game-bubble-one">+100</div><div class="game-bubble game-bubble-two">🎮</div></div><div class="project-card-bottom"><div><span class="project-type" data-i18n="gamesType">ألعاب ويب تفاعلية</span><h3 data-i18n="gamesName">ألعاب قلب المدينة</h3><p data-i18n="gamesDesc">ألعاب أونلاين تفتح عبر QR الموجود على الطاولة، تفاعل مباشر وتجربة ممتعة مرتبطة بالمطعم.</p><a href="https://play.jitakapp.com/?r=qalb-almadina" class="project-visit-link" target="_blank" rel="noopener noreferrer"><span data-i18n="gamesVisit">العب الآن</span><svg class="ico" aria-hidden="true"><use href="#i-arrow-up"></use></svg></a></div><a href="https://play.jitakapp.com/?r=qalb-almadina" class="project-action" target="_blank" rel="noopener noreferrer" aria-label="Visit the online games"><svg class="ico"><use href="#i-arrow-up"></use></svg></a></div></article>
@@ -153,5 +170,32 @@
   <footer class="footer"><div class="container"><div class="footer-upper"><div class="footer-about"><a class="brand footer-brand" href="#top"><span class="brand-mark"><img src="assets/open-end-icon.png" alt="Open End logo" width="48" height="48" /></span><span class="brand-text"><strong>Open End</strong><small>TECHNOLOGY<span class="brand-dot">.</span></small></span></a><p data-i18n="footerDesc">نصنع حلولاً برمجية تجعل الأعمال أسهل والتجارب أذكى.</p><div class="footer-social"><a href="https://wa.me/9647701613232" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico"><use href="#i-whatsapp"></use></svg></a><a id="instagramLink" href="https://www.instagram.com/open.end_tech/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg class="ico"><use href="#i-instagram"></use></svg></a></div></div><div class="footer-links"><h4 data-i18n="footerNavigate">استكشف</h4><a href="#projects" data-i18n="navProjects">أعمالنا</a><a href="#solutions" data-i18n="navSolutions">حلولنا</a><a href="#approach" data-i18n="navApproach">طريقة عملنا</a><a href="#contact" data-i18n="navContact">تواصل معنا</a></div><div class="footer-links"><h4 data-i18n="footerServices">خدمات مختارة</h4><a href="#solutions" data-i18n="footerPos">أنظمة المطاعم</a><a href="#solutions" data-i18n="footerEvents">أنظمة الحفلات</a><a href="#solutions" data-i18n="footerCars">أنظمة السيارات</a><a href="#solutions" data-i18n="footerApps">تطبيقات ومواقع</a></div><div class="footer-contact"><h4 data-i18n="footerContact">تواصل</h4><a href="tel:+9647701613232" dir="ltr">+964 770 161 3232</a><span data-i18n="footerBy">إدارة المهندس سافيو يوحنا</span><span class="footer-location"><svg class="ico"><use href="#i-location"></use></svg><span data-i18n="footerLocation">العراق — نخدم مشاريعك أينما كنت</span></span></div></div><div class="footer-bottom"><span>© <span id="footerYear">2026</span> Open End Technology. <span data-i18n="copyright">جميع الحقوق محفوظة.</span></span><span class="footer-signature">BUILT WITH PURPOSE <span>✳</span></span><a href="#top" class="back-top" aria-label="Back to top"><svg class="ico"><use href="#i-arrow-up"></use></svg></a></div></div></footer>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <script src="assets/app.js" defer></script>
+
+  <script id="project-card-navigation-v4">
+    document.addEventListener('DOMContentLoaded', function () {
+      const cards = [
+        ['.project-jitak', 'https://play.google.com/store/apps/details?id=com.jitak.app'],
+        ['.project-event', 'https://events.jitakapp.com/'],
+        ['.project-games', 'https://play.jitakapp.com/?r=qalb-almadina']
+      ];
+      for (const [selector, destination] of cards) {
+        const card = document.querySelector('#projects ' + selector);
+        if (!card) continue;
+        card.tabIndex = 0;
+        card.setAttribute('aria-label', selector === '.project-event' ? 'فتح موقع الكرنفال' : selector === '.project-jitak' ? 'تحميل تطبيق جيتك' : 'فتح ألعاب قلب المدينة');
+        card.addEventListener('click', (event) => {
+          if (event.target.closest('a, button, input, select, textarea')) return;
+          const selection = window.getSelection();
+          if (selection && String(selection).trim()) return;
+          window.location.assign(destination);
+        });
+        card.addEventListener('keydown', (event) => {
+          if (event.target !== card || (event.key !== 'Enter' && event.key !== ' ')) return;
+          event.preventDefault();
+          window.location.assign(destination);
+        });
+      }
+    });
+  </script>
 </body>
 </html>
