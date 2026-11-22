@@ -4,6 +4,9 @@ const SITE_CONFIG = Object.freeze({
   phoneInternational: '9647701613232',
   instagramUrl: 'https://www.instagram.com/open.end_tech/',
   appUrl: 'https://jitakapp.com/',
+  appGooglePlayUrl: 'https://play.google.com/store/apps/details?id=com.jitak.app',
+  appAppStoreUrl: 'https://apps.apple.com/iq/app/%D8%AC%D9%8A%D8%AA%D9%83-jitak/id6812668250',
+  eventUrl: 'https://events.jitakapp.com/',
   gamesUrl: 'https://play.jitakapp.com/?r=qalb-almadina'
 });
 
@@ -16,7 +19,7 @@ const english = {
   introLabel:'About us',introTitle:'We believe the best software <span>makes work simpler.</span>',introText:'At Open End Technology, we design and develop solutions tailored to each business. From mobile apps and websites to management software, point-of-sale systems and barcodes. We care as much about usability and daily operations as we do about beautiful interfaces.',introLink:'Discover our services',
   projectsEyebrow:'Featured work',projectsTitle:'Beyond ideas.<br/><span>Real-world projects.</span>',projectsIntro:'A selection of our products and experiences. Every project is built around a real problem.',
   jitakType:'Multi-service app · iOS & Android',jitakDesc:'A single app for restaurants, shops and services, bringing ordering and delivery together for customers and businesses.',openJitak:'Visit JITAK website',
-  posType:'Restaurant & café operations',posDesc:'Tables, orders, cashier, kitchen printing, with both table-QR ordering and classic POS workflows.',eventType:'Online registration & entry',eventName:'Bahra d’Baghdida Carnival',eventDesc:'Online registration, barcode passes, gate check-in and organizer dashboards for events.',gamesType:'Interactive browser games',gamesName:'Qalb Al Madina Games',gamesDesc:'Online games launched from table QR codes, connecting dining experiences with interactive play.',
+  posType:'Restaurant & café operations',posDesc:'Tables, orders, cashier, kitchen printing, with both table-QR ordering and classic POS workflows.',eventType:'Online registration & entry',eventName:'Bahra d’Baghdida Carnival',eventDesc:'Online registration, barcode passes, gate check-in and organizer dashboards for events.',eventVisit:'Visit registration site',gamesVisit:'Play now',gamesType:'Interactive browser games',gamesName:'Qalb Al Madina Games',gamesDesc:'Online games launched from table QR codes, connecting dining experiences with interactive play.',
   solutionsLabel:'What we build',solutionsTitle:'Every business has a challenge.<br/><span>We build the solution.</span>',solutionsDesc:'Ready-to-tailor modules and bespoke solutions — built around your team, customers and business needs.',filterAll:'All services',filterBusiness:'Business systems',filterExperience:'Digital experiences',filterCustom:'Development',serviceAsk:'Ask about this solution',
   svc1Title:'QR restaurant & café POS',svc1Desc:'Interactive table menus, guest ordering, captain dashboard, billing and receipts.',
   svc2Title:'Classic restaurant POS',svc2Desc:'Cashier, table management, kitchen orders and thermal printing without guest QR ordering.',

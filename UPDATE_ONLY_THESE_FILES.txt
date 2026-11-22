@@ -1,0 +1,7 @@
+OPEN END TECHNOLOGY / v3 PROJECT LINKS
+Copy or replace only these 3 files in the existing GitHub repository (main branch):
+  index.html
+  assets/app.js
+  assets/neon-theme.css
+Do not replace any other files, do not touch DNS.
+Cloudflare Pages should deploy automatically after GitHub commit.
